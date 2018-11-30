@@ -1,0 +1,33 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "fitTrack"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "fitTrack"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "fitTrack"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "fitTrack"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "fitTrack"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "fitTrack"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "fitTrack"
+    }
+  },
+  "dependent_plugins": {}
+}
