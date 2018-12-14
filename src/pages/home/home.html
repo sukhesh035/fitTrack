@@ -10,8 +10,18 @@
 <ion-content padding>
   <!-- <h3>Ionic Menu Starter</h3> -->
 
-  <button (click)="getPhoto()">Add Photo</button>
+  <button ion-button full (click)="getPhoto()">Add Photo</button>
+  <button ion-button (click)="getUploadedFiles()">Get all photos</button>
+
+  <h1>Total: {{imgListArr?.length}}</h1>
+  <div ion-item *ngFor="let item of imgListArr">
+    <img src="{{item.imgUrl}}" alt="">
+  </div>
+
+
+  <!-- <button (click)="getPhoto()">Add Photo</button>
   <img src="{{base64Image}}" *ngIf="base64Image" alt="">
+  <button (click)="getUploadedFiles()">getPhotots</button> -->
 
   <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
 </ion-content>
