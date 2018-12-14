@@ -7,7 +7,7 @@
   "proxies": [
     {
       "path": "/nodeServer",
-      "proxyUrl": "http://35.196.56.3:3000"
+      "proxyUrl": "http://35.237.106.103:3000"
     }
   ]
 }

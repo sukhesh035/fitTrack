@@ -28,11 +28,13 @@ export class HomePage {
 
   getPhoto() {
     const options: CameraOptions = {
-      quality: 2,
+      quality: 5,
       destinationType: this.camera.DestinationType.FILE_URI,
       encodingType: this.camera.EncodingType.JPEG,
       mediaType: this.camera.MediaType.PICTURE
     }
+
+    console.log("camera triggered");
 
     this.camera.getPicture(options).then((imageData) => {
       // imageData is either a base64 encoded string or a file URI
@@ -73,7 +75,7 @@ export class HomePage {
 
   getUploadedFiles() {
     console.log("get all images");
-    this.http.get("http://35.196.56.3:3000/images")
+    this.http.get("http://35.237.106.103:3000/images")
       .subscribe(resposne => {
         this.imgListArr = resposne;
       }, error => {
@@ -96,7 +98,7 @@ export class HomePage {
       headers: {}
     }
 
-    fileTransfer.upload(this.imageURI, 'http://35.196.56.3:3000/uploadFile', options)
+    fileTransfer.upload(this.imageURI, 'http://35.237.106.103:3000/uploadFile', options)
       .then((data) => {
         console.log(data + " Uploaded Successfully");
         // this.imageFileName = "http://192.168.0.7:8080/static/images/ionicfile.jpg"

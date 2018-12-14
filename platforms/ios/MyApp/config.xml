@@ -30,12 +30,6 @@
         <param name="ios-package" value="CDVSplashScreen" />
         <param name="onload" value="true" />
     </feature>
-    <allow-navigation href="http://localhost:8080/*" />
-    <allow-navigation href="http://127.0.0.1:8080/*" />
-    <allow-navigation href="ionic://*" />
-    <feature name="IonicWebView">
-        <param name="ios-package" value="CDVWKWebViewEngine" />
-    </feature>
     <feature name="Keyboard">
         <param name="ios-package" onload="true" value="CDVIonicKeyboard" />
     </feature>
@@ -66,8 +60,8 @@
         <string>your usage message</string>
     </edit-config>
     <access origin="*" />
-    <access origin="http://35.196.56.3:3000" />
-    <allow-navigation href="http://35.196.56.3:3000" />
+    <access origin="http://35.237.106.103:3000" />
+    <allow-navigation href="http://35.237.106.103:3000" />
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
     <icon height="57" src="resources/ios/icon/icon.png" width="57" />
@@ -117,7 +111,6 @@
     <preference name="PaginationMode" value="unpaginated" />
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarStyle" value="lightcontent" />
-    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <preference name="CameraUsesGeolocation" value="false" />
     <preference name="ScrollEnabled" value="false" />
     <preference name="android-minSdkVersion" value="19" />

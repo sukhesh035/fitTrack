@@ -16,9 +16,6 @@
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "fitTrack"
     },
-    "cordova-plugin-ionic-webview": {
-      "PACKAGE_NAME": "fitTrack"
-    },
     "cordova-plugin-ionic-keyboard": {
       "PACKAGE_NAME": "fitTrack"
     },
